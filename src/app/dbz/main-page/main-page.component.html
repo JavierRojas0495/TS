@@ -3,20 +3,13 @@
 
 <div class="row">
     <div class="col">
-        <app-personajes [personajes]="personajes"></app-personajes>
-        <!-- <h3>Personajes</h3>
-        <hr>
-        <ul>
-            <li *ngFor="let personaje of personajes ; let i = index">
-                <small> {{i+1 }} - {{ personaje.nombre }} </small>
-                <small> -- {{ personaje.poder | number }} </small>
-                
-            </li>
-        </ul> -->
+        <app-personajes></app-personajes>
     </div>
 
     <div class="col">
-        <app-agregar [personajes]="personajes"></app-agregar>
+        <app-agregar 
+        [nuevo]="nuevo"></app-agregar>
+
     </div>
 
 </div>
